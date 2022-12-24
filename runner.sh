@@ -41,7 +41,7 @@ case $1 in
 esac
 
 for port in "${nodes[@]}"; do
-    (python Node.py "${port}") &
+    (python3 Node.py "${port}") &
 done
 
 sleep 0.1
